@@ -6,9 +6,11 @@
     <title>NavBar component</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   </head>
   <body>
@@ -16,47 +18,114 @@
       <div class="container-fluid">
         <div class="row flex-nowrap">
           <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 navbarBG">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-dark min-vh-100">
               <nav>
-                <ul class="nav nav-pills flex-column" id="nav_accordion">
+                <ul class="nav flex-column" id="nav_accordion">
                   <li class="nav-item">
                     <a class="nav-link" href="#"> 
                       <img src="https://static.wixstatic.com/media/edd305_e0da0017bc6a4001a58db26284d2fca9~mv2.jpg/v1/crop/x_0,y_72,w_1667,h_1867/fill/w_90,h_101,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/OSLogo2020.jpg" class="img-fluid" alt="Responsive image">
+                      <p class="fs-6">Promoting the visual arts in Boulder County since 1995</p>
                     </a>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link text-dark" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#"> Submenu links <i class="bi small bi-caret-down-fill"></i> </a>
+                    <form class="form-inline">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">🔍︎</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </form>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Book a Studio Visit!</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">About<i class="bi small bi-caret-down-fill"></i> </a>
                     <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
-                      <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                      <li><a class="nav-link" href="#">Missions & Programs</a></li>
+                      <li><a class="nav-link" href="#">Open Studios History</a></li>
                     </ul>
-                
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#"> More menus <i class="bi small bi-caret-down-fill"></i> </a>
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">Programs<i class="bi small bi-caret-down-fill"></i> </a>
                     <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
-                      <li><a class="nav-link" href="#">Submenu item 4 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 5 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 6 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+                      <li><a class="nav-link" href="#">Membership</a></li>
+                      <li><a class="nav-link" href="#">Open Studios Tour</a></li>
+                      <li><a class="nav-link" href="#">Plein Air Program</a></li>
+                      <li><a class="nav-link" href="#">POP! Gallery</a></li>
+                      <li><a class="nav-link" href="#">Art Education</a></li>
+                      <li><a class="nav-link" href="#">EDLinks</a></li>
+                      <li><a class="nav-link" href="#">Mobile Art Lab</a></li>
+                      <li><a class="nav-link" href="#">Art Class Search</a></li>
                     </ul>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Another page </a>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item3" href="#">Directories<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item3" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Member Artist Catalog</a></li>
+                      <li><a class="nav-link" href="#">Artist Directory List</a></li>
+                      <li><a class="nav-link" href="#">Map of Studios</a></li>
+                      <li><a class="nav-link" href="#">Plein Air Artists</a></li>
+                      <li><a class="nav-link" href="#">Teachers/Class Search</a></li>
+                    </ul>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Demo link </a>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#">Donate<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item4" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Marshall Fire Fundraiser</a></li>
+                      <li><a class="nav-link" href="#">Pet Portrait Promotion</a></li>
+                      <li><a class="nav-link" href="#">Donation Page</a></li>
+                      <li><a class="nav-link" href="#">Donor List</a></li>
+                    </ul>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Menu item </a>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item5" href="#">Join In<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item5" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Patron Email List</a></li>
+                      <li><a class="nav-link" href="#">Artist Email List</a></li>
+                      <li><a class="nav-link" href="#">Volunteer</a></li>
+                    </ul>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Something </a>
+                    <a class="nav-link" href="#">Sponsor</a>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#"> Other link </a>
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item6" href="#">Events<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item6" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">News & Events</a></li>
+                      <li><a class="nav-link" href="#">Event Calendar</a></li>
+                    </ul>
                   </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item7" href="#">Shop & Galleries<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item7" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Plein Air Paint Outs</a></li>
+                      <li><a class="nav-link" href="#">Marshall Fire Fundraiser</a></li>
+                      <li><a class="nav-link" href="#">Gift Gallery</a></li>
+                      <li><a class="nav-link" href="#">Painting Fine Art Gallery A-K</a></li>
+                      <li><a class="nav-link" href="#">Painting Fine Art Gallery L-Z</a></li>
+                      <li><a class="nav-link" href="#">Three Dimensional Fine Art Gallery</a></li>
+                      <li><a class="nav-link" href="#">Photography Fine Art Gallery</a></li>
+                      <li><a class="nav-link" href="#">Jewlery Fine Art Galleryr</a></li>
+                      <li><a class="nav-link" href="#">Interesting Times Exhibit</a></li>
+                    </ul>
+                  </li>
+
                 </ul>
               </nav>
             </div>
@@ -65,6 +134,17 @@
       </div>
     </header>
       
-      
+    <script>
+      $(document).ready(function () {
+
+          $('ul.nav > li')
+                  .click(function (e) {
+              $('ul.nav > li')
+                  .removeClass('active');
+              $(this).addClass('active');
+          });
+      });
+    </script>
+    
     </body>
 </html>

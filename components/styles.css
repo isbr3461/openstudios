@@ -2,7 +2,16 @@
     background-color: #fcd55a;
   }
 
-
-.nav-item{
+.nav-link{
     font-weight: bold; 
+    color:#083035;
+}
+
+.nav>.active>a{
+    background-color: #083035;
+    color: white;
+}
+
+.nav a:hover{
+    color:rgb(243, 248, 247)
 }
