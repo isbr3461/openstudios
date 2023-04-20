@@ -19,3 +19,29 @@
 .sponsorContainer{
     padding: 20px 20px 20px 20px;
 }
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .logos__item {
+    background: #eee;
+    list-style-type: none;
+  }
+  
+  .logos__item img {
+    width: 230px;
+    height: 175px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  .logos__item:hover img {
+    opacity:0.2;
+  }
+
+  .center{
+    margin: auto;
+  }
