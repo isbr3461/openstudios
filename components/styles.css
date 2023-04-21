@@ -1,6 +1,6 @@
 .navbarBG{
     background-color: #fcd55a;
-  }
+}
 
 .nav-link{
     font-weight: bold; 
@@ -24,24 +24,51 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 1rem;
-  }
+}
   
-  .logos__item {
+.logos__item {
     background: #eee;
     list-style-type: none;
-  }
+}
   
-  .logos__item img {
+.logos__item img {
     width: 230px;
     height: 175px;
     object-fit: contain;
     mix-blend-mode: multiply;
-  }
+}
 
-  .logos__item:hover img {
+.logos__item:hover img {
     opacity:0.2;
-  }
+}
 
-  .center{
+.center{
     margin: auto;
-  }
+}
+
+.btn{
+    width: 20%;
+    background-color: #083035;
+    color: white;
+}
+
+.special{
+    background-color: #fcd55a;
+    color: #083035;
+    padding-bottom: 10px;
+}
+
+.spacer{
+    margin-bottom: 30px;
+}
+
+.btn:focus {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem red;
+} 
+
+.special:focus {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem red;
+}
+
