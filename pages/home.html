@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NavBar component</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row flex-nowrap">
+          <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 navbarBG">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-dark min-vh-100">
+              <nav>
+                <ul class="nav flex-column" id="nav_accordion">
+                  
+                  <li class="nav-item">
+                    <img src="https://static.wixstatic.com/media/edd305_e0da0017bc6a4001a58db26284d2fca9~mv2.jpg/v1/crop/x_0,y_72,w_1667,h_1867/fill/w_90,h_101,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/OSLogo2020.jpg" class="img-fluid" alt="Open Studios Home">
+                    <p class="fs-6">Promoting the visual arts in Boulder County since 1995</p>
+                  </li>
+
+                  <li class="nav-item">
+                    <form class="form-inline">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">🔍︎</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                      </div>
+                    </form>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Book a Studio Visit!</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">About<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Missions & Programs</a></li>
+                      <li><a class="nav-link" href="#">Open Studios History</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">Programs<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Membership</a></li>
+                      <li><a class="nav-link" href="#">Open Studios Tour</a></li>
+                      <li><a class="nav-link" href="#">Plein Air Program</a></li>
+                      <li><a class="nav-link" href="#">POP! Gallery</a></li>
+                      <li><a class="nav-link" href="#">Art Education</a></li>
+                      <li><a class="nav-link" href="#">EDLinks</a></li>
+                      <li><a class="nav-link" href="#">Mobile Art Lab</a></li>
+                      <li><a class="nav-link" href="#">Art Class Search</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item3" href="#">Directories<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item3" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Member Artist Catalog</a></li>
+                      <li><a class="nav-link" href="#">Artist Directory List</a></li>
+                      <li><a class="nav-link" href="#">Map of Studios</a></li>
+                      <li><a class="nav-link" href="#">Plein Air Artists</a></li>
+                      <li><a class="nav-link" href="#">Teachers/Class Search</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#">Donate<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item4" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Marshall Fire Fundraiser</a></li>
+                      <li><a class="nav-link" href="#">Pet Portrait Promotion</a></li>
+                      <li><a class="nav-link" href="#">Donation Page</a></li>
+                      <li><a class="nav-link" href="#">Donor List</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item5" href="#">Join In<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item5" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Patron Email List</a></li>
+                      <li><a class="nav-link" href="#">Artist Email List</a></li>
+                      <li><a class="nav-link" href="#">Volunteer</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sponsor</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item6" href="#">Events<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item6" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">News & Events</a></li>
+                      <li><a class="nav-link" href="#">Event Calendar</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item7" href="#">Shop & Galleries<i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item7" class="submenu collapse" data-bs-parent="#nav_accordion">
+                      <li><a class="nav-link" href="#">Plein Air Paint Outs</a></li>
+                      <li><a class="nav-link" href="#">Marshall Fire Fundraiser</a></li>
+                      <li><a class="nav-link" href="#">Gift Gallery</a></li>
+                      <li><a class="nav-link" href="#">Painting Fine Art Gallery A-K</a></li>
+                      <li><a class="nav-link" href="#">Painting Fine Art Gallery L-Z</a></li>
+                      <li><a class="nav-link" href="#">Three Dimensional Fine Art Gallery</a></li>
+                      <li><a class="nav-link" href="#">Photography Fine Art Gallery</a></li>
+                      <li><a class="nav-link" href="#">Jewlery Fine Art Galleryr</a></li>
+                      <li><a class="nav-link" href="#">Interesting Times Exhibit</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+  
+          <div class="infobox">
+            <h1> Call for Artists!</h1>
+            <figure class="figure">
+            <img src="./Sam H Call Graphic OSArtistCall2.webp" class="figure-img img-fluid rounded" alt="call for artists informational graphic" />
+            <figcaption class="figure-caption">Apply now through may 14th at <a a href="callforentry.org">callforentry.org</a></figcaption>
+            </figure>
+          
+            <h2>Our Sponsors</h2>
+            <ul class="logos">
+              <li class="logos__item center">
+                <a href="https://www.commfound.org/">
+                  <img src="logos/cfb.jpg" alt="community foundation boulder county" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://boulderarts.org/">
+                  <img src="logos/COBOAC-cropped-front.jpg" alt="city of boulder office of arts and culture" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://www.createboulder.org/">
+                  <img src="logos/create+boulder+logo+no+background.jpg" alt="create boulder" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://denverfoundation.org/">
+                  <img src="logos/dnver+fdn+newest.png" alt="the denver foundation" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://www.bouldercoloradousa.com/">
+                  <img src="logos/logo-2022-modified.png" alt="boulder colorado" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://oedit.colorado.gov/colorado-creative-industries">
+                  <img src="logos/logo.png" alt="colorado office of economic development and international trade" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://scfd.org/">
+                  <img src="logos/scfd_logo_vert_1_opt.jpg" alt="SCFD" />
+                </a>
+              </li>
+      
+              <li class="logos__item center">
+                <a href="https://boulderdowntown.com/">
+                  <img src="logos/TBXfJW-D_400x400.jpg" alt="Downtown boulder" />
+                </a>
+              </li>
+            </ul> 
+          </div>
+
+          <div class="container">
+            <div class="d-grid gap-2">
+              <a href="#" type="button" 
+                class="btn btn-block center special spacer">
+                Membership
+              </a>
+      
+              <a href="#" type="button" 
+                class="btn btn-block center ">
+                Schedule Tour
+              </a>
+      
+              <a href="#" type="button" 
+                class="btn btn-block center spacer">
+                About Tour
+              </a>
+                
+              <a href="#" type="button" 
+                class="btn btn-block center">
+                News and Events
+              </a>
+      
+              <a href="#" type="button" 
+                class="btn btn-block center">
+                Artist Catalog
+              </a>
+      
+              <a href="#" type="button" 
+                class="btn btn-block center">
+                Plein Air Programs
+              </a>
+      
+              <a href="#" type="button" 
+                class="btn btn-block center spacer">
+                Pop! Gallery
+              </a>
+      
+              <a href="#" type="button" 
+                class="btn btn-block center">
+                Member Form
+              </a>
+            </div>
+        </div>
+      
+        </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <script>
+      $(document).ready(function () {
+
+          $('ul.nav > li')
+                  .click(function (e) {
+              $('ul.nav > li')
+                  .removeClass('active');
+              $(this).addClass('active');
+          });
+      });
+    </script>
+    
+    </body>
+</html>
